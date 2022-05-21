@@ -1,0 +1,74 @@
+.animation-1 {
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(to right,red, green,blue);
+
+    animation-name: my-animation-1;
+    animation-duration: 1s;
+    animation-timing-function:steps();
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes my-animation-1 {
+    from {
+        filter: hue-rotate(0deg);
+    }
+
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.animation-2 {
+    width: 100%;
+    height: 10rem;
+    border-radius: 50%;
+    border:0.5rem solid transparent;
+    border-top-color: crimson;
+
+   /* animation-name: my-animation-2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;*/
+
+    animation: my-animation-2 1s ease-in-out infinite;
+}
+
+@keyframes my-animation-2 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.animation-3 {
+    width: 1px;
+    height: 1px;
+    background: crimson;
+    
+
+    animation-name: my-animation-3;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes my-animation-3 {
+    from {
+        width: 1px;
+        height: 1px;
+        
+    }
+
+    to {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
